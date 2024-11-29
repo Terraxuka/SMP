@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module shared.classes.ascii_generator</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong><a href="shared.html"><font color="#ffffff">shared</font></a>.<a href="shared.classes.html"><font color="#ffffff">classes</font></a>.ascii_generator</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:d%3A%5Cuniversity%5Cpythonlearning%5Csrc%5Cshared%5Cclasses%5Cascii_generator.py">d:\university\pythonlearning\src\shared\classes\ascii_generator.py</a></font></td></tr></table>
+    <p><tt>This&nbsp;module&nbsp;contains&nbsp;the&nbsp;definition&nbsp;of&nbsp;the&nbsp;<a href="#AsciiGenerator">AsciiGenerator</a>&nbsp;abstract&nbsp;base&nbsp;class&nbsp;<br>
+which&nbsp;defines&nbsp;the&nbsp;interface&nbsp;for&nbsp;generating&nbsp;ASCII&nbsp;art.&nbsp;The&nbsp;module&nbsp;also&nbsp;provides&nbsp;<br>
+static&nbsp;methods&nbsp;for&nbsp;aligning&nbsp;text&nbsp;and&nbsp;replacing&nbsp;characters&nbsp;in&nbsp;a&nbsp;given&nbsp;data&nbsp;string.</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="abc.html#ABC">abc.ABC</a>(<a href="builtins.html#object">builtins.object</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="shared.classes.ascii_generator.html#AsciiGenerator">AsciiGenerator</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="AsciiGenerator">class <strong>AsciiGenerator</strong></a>(<a href="abc.html#ABC">abc.ABC</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Abstract&nbsp;base&nbsp;class&nbsp;for&nbsp;ASCII&nbsp;art&nbsp;generators.<br>
+&nbsp;<br>
+Methods:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#AsciiGenerator-generate">generate</a>(data,&nbsp;**kwargs):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Abstract&nbsp;method&nbsp;to&nbsp;generate&nbsp;ASCII&nbsp;art&nbsp;based&nbsp;on&nbsp;provided&nbsp;data.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#AsciiGenerator-is_font_break_lines">is_font_break_lines</a>(font):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Abstract&nbsp;method&nbsp;to&nbsp;check&nbsp;if&nbsp;a&nbsp;font&nbsp;breaks&nbsp;lines.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#AsciiGenerator-get_fonts">get_fonts</a>():<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Abstract&nbsp;method&nbsp;to&nbsp;get&nbsp;a&nbsp;list&nbsp;of&nbsp;available&nbsp;fonts.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#AsciiGenerator-get_font_char_height">get_font_char_height</a>(font):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Abstract&nbsp;method&nbsp;to&nbsp;get&nbsp;the&nbsp;character&nbsp;height&nbsp;of&nbsp;a&nbsp;given&nbsp;font.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#AsciiGenerator-get_font_char_width">get_font_char_width</a>(font):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Abstract&nbsp;method&nbsp;to&nbsp;get&nbsp;the&nbsp;character&nbsp;width&nbsp;of&nbsp;a&nbsp;given&nbsp;font.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#AsciiGenerator-alignment_text">alignment_text</a>(text,&nbsp;alignment,&nbsp;width):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Aligns&nbsp;the&nbsp;given&nbsp;text&nbsp;to&nbsp;the&nbsp;specified&nbsp;alignment&nbsp;('left',&nbsp;'center',&nbsp;'right')<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;within&nbsp;the&nbsp;given&nbsp;width.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#AsciiGenerator-replace">replace</a>(data,&nbsp;bright_symbol,&nbsp;empty_symbol):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Replaces&nbsp;non-space&nbsp;characters&nbsp;in&nbsp;data&nbsp;with&nbsp;bright_symbol&nbsp;and&nbsp;space<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;characters&nbsp;with&nbsp;empty_symbol.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="shared.classes.ascii_generator.html#AsciiGenerator">AsciiGenerator</a></dd>
+<dd><a href="abc.html#ABC">abc.ABC</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Static methods defined here:<br>
+<dl><dt><a name="AsciiGenerator-alignment_text"><strong>alignment_text</strong></a>(text: str, alignment, width)</dt><dd><tt>Aligns&nbsp;the&nbsp;given&nbsp;text&nbsp;to&nbsp;the&nbsp;specified&nbsp;alignment&nbsp;within&nbsp;the&nbsp;given&nbsp;width.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;text&nbsp;(str):&nbsp;The&nbsp;text&nbsp;to&nbsp;align.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;alignment&nbsp;(str):&nbsp;The&nbsp;alignment&nbsp;type&nbsp;('left',&nbsp;'center',&nbsp;'right').<br>
+&nbsp;&nbsp;&nbsp;&nbsp;width&nbsp;(int):&nbsp;The&nbsp;total&nbsp;width&nbsp;for&nbsp;alignment.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;str:&nbsp;The&nbsp;aligned&nbsp;text.<br>
+&nbsp;<br>
+Raises:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;ValueError:&nbsp;If&nbsp;the&nbsp;alignment&nbsp;type&nbsp;is&nbsp;invalid.</tt></dd></dl>
+
+<dl><dt><a name="AsciiGenerator-generate"><strong>generate</strong></a>(data, **kwargs)</dt><dd><tt>Generates&nbsp;ASCII&nbsp;art&nbsp;based&nbsp;on&nbsp;the&nbsp;provided&nbsp;data.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;data&nbsp;(str):&nbsp;The&nbsp;input&nbsp;data&nbsp;for&nbsp;generating&nbsp;ASCII&nbsp;art.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;**kwargs:&nbsp;Additional&nbsp;keyword&nbsp;arguments&nbsp;for&nbsp;customization.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;str:&nbsp;The&nbsp;generated&nbsp;ASCII&nbsp;art.</tt></dd></dl>
+
+<dl><dt><a name="AsciiGenerator-get_font_char_height"><strong>get_font_char_height</strong></a>(font)</dt><dd><tt>Gets&nbsp;the&nbsp;character&nbsp;height&nbsp;of&nbsp;the&nbsp;given&nbsp;font.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;font&nbsp;(str):&nbsp;The&nbsp;name&nbsp;of&nbsp;the&nbsp;font.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;int:&nbsp;The&nbsp;character&nbsp;height&nbsp;of&nbsp;the&nbsp;font.</tt></dd></dl>
+
+<dl><dt><a name="AsciiGenerator-get_font_char_width"><strong>get_font_char_width</strong></a>(font)</dt><dd><tt>Gets&nbsp;the&nbsp;character&nbsp;width&nbsp;of&nbsp;the&nbsp;given&nbsp;font.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;font&nbsp;(str):&nbsp;The&nbsp;name&nbsp;of&nbsp;the&nbsp;font.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;int:&nbsp;The&nbsp;character&nbsp;width&nbsp;of&nbsp;the&nbsp;font.</tt></dd></dl>
+
+<dl><dt><a name="AsciiGenerator-get_fonts"><strong>get_fonts</strong></a>()</dt><dd><tt>Gets&nbsp;a&nbsp;list&nbsp;of&nbsp;available&nbsp;fonts.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;list:&nbsp;A&nbsp;list&nbsp;of&nbsp;available&nbsp;font&nbsp;names.</tt></dd></dl>
+
+<dl><dt><a name="AsciiGenerator-is_font_break_lines"><strong>is_font_break_lines</strong></a>(font)</dt><dd><tt>Checks&nbsp;if&nbsp;the&nbsp;given&nbsp;font&nbsp;breaks&nbsp;lines.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;font&nbsp;(str):&nbsp;The&nbsp;name&nbsp;of&nbsp;the&nbsp;font&nbsp;to&nbsp;check.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;bool:&nbsp;True&nbsp;if&nbsp;the&nbsp;font&nbsp;breaks&nbsp;lines,&nbsp;False&nbsp;otherwise.</tt></dd></dl>
+
+<dl><dt><a name="AsciiGenerator-replace"><strong>replace</strong></a>(data: str, bright_symbol, empty_symbol)</dt><dd><tt>Replaces&nbsp;non-space&nbsp;characters&nbsp;in&nbsp;data&nbsp;with&nbsp;bright_symbol&nbsp;and&nbsp;space<br>
+characters&nbsp;with&nbsp;empty_symbol.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;data&nbsp;(str):&nbsp;The&nbsp;input&nbsp;data&nbsp;string.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;bright_symbol&nbsp;(str):&nbsp;The&nbsp;symbol&nbsp;to&nbsp;replace&nbsp;non-space&nbsp;characters.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;empty_symbol&nbsp;(str):&nbsp;The&nbsp;symbol&nbsp;to&nbsp;replace&nbsp;space&nbsp;characters.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;str:&nbsp;The&nbsp;data&nbsp;string&nbsp;after&nbsp;replacements.</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>__abstractmethods__</strong> = frozenset({'generate', 'get_font_char_height', 'get_font_char_width', 'get_fonts', 'is_font_break_lines'})</dl>
+
+</td></tr></table></td></tr></table>
+</body></html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module labs.lab9.bll.tree_print</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong><a href="labs.html"><font color="#ffffff">labs</font></a>.<a href="labs.lab9.html"><font color="#ffffff">lab9</font></a>.<a href="labs.lab9.bll.html"><font color="#ffffff">bll</font></a>.tree_print</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:d%3A%5Cuniversity%5Cpythonlearning%5Csrc%5Clabs%5Clab9%5Cbll%5Ctree_print.py">d:\university\pythonlearning\src\labs\lab9\bll\tree_print.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-folder_tree"><strong>folder_tree</strong></a>(array: list[str], nest_divider='.', indent=' ', nest_indent='└-', flag_format='\x1b[1m{}\x1b[22m')</dt><dd><tt>:param&nbsp;array:&nbsp;A&nbsp;list&nbsp;of&nbsp;strings&nbsp;where&nbsp;each&nbsp;string&nbsp;represents&nbsp;a&nbsp;nested&nbsp;item&nbsp;using&nbsp;the&nbsp;specified&nbsp;nest_divider.<br>
+:param&nbsp;nest_divider:&nbsp;A&nbsp;string&nbsp;that&nbsp;separates&nbsp;different&nbsp;levels&nbsp;of&nbsp;nesting&nbsp;within&nbsp;an&nbsp;item.&nbsp;Defaults&nbsp;to&nbsp;".".<br>
+:param&nbsp;indent:&nbsp;A&nbsp;string&nbsp;used&nbsp;to&nbsp;indent&nbsp;nested&nbsp;items.&nbsp;Defaults&nbsp;to&nbsp;a&nbsp;space&nbsp;"&nbsp;".<br>
+:param&nbsp;nest_indent:&nbsp;A&nbsp;string&nbsp;used&nbsp;as&nbsp;a&nbsp;prefix&nbsp;for&nbsp;nested&nbsp;items.&nbsp;Defaults&nbsp;to&nbsp;"└-".<br>
+:param&nbsp;flag_format:&nbsp;A&nbsp;string&nbsp;format&nbsp;used&nbsp;to&nbsp;apply&nbsp;styling&nbsp;to&nbsp;items.&nbsp;Defaults&nbsp;to&nbsp;bold&nbsp;formatting&nbsp;using&nbsp;ANSI&nbsp;escape&nbsp;codes.<br>
+:return:&nbsp;A&nbsp;formatted&nbsp;tree&nbsp;structure&nbsp;as&nbsp;a&nbsp;string&nbsp;where&nbsp;each&nbsp;item's&nbsp;nesting&nbsp;is&nbsp;visually&nbsp;represented.</tt></dd></dl>
+ <dl><dt><a name="-list_to_tree"><strong>list_to_tree</strong></a>(string, lists: list[list[str]], level, indent=' ', nest_indent='└-', flag_format='\x1b[1m{}\x1b[1m')</dt><dd><tt>:param&nbsp;string:&nbsp;Initial&nbsp;string&nbsp;to&nbsp;which&nbsp;the&nbsp;tree&nbsp;structure&nbsp;will&nbsp;be&nbsp;appended.<br>
+:param&nbsp;lists:&nbsp;A&nbsp;list&nbsp;of&nbsp;lists,&nbsp;where&nbsp;each&nbsp;inner&nbsp;list&nbsp;represents&nbsp;a&nbsp;path&nbsp;in&nbsp;the&nbsp;tree.<br>
+:param&nbsp;level:&nbsp;Current&nbsp;level&nbsp;of&nbsp;depth&nbsp;in&nbsp;the&nbsp;tree&nbsp;structure.<br>
+:param&nbsp;indent:&nbsp;String&nbsp;used&nbsp;for&nbsp;indentation&nbsp;(default&nbsp;is&nbsp;a&nbsp;single&nbsp;space).<br>
+:param&nbsp;nest_indent:&nbsp;String&nbsp;used&nbsp;for&nbsp;nesting&nbsp;levels&nbsp;(default&nbsp;is&nbsp;"└-").<br>
+:param&nbsp;flag_format:&nbsp;Format&nbsp;string&nbsp;used&nbsp;to&nbsp;highlight&nbsp;certain&nbsp;nodes&nbsp;(default&nbsp;wraps&nbsp;the&nbsp;node&nbsp;in&nbsp;ANSI&nbsp;bold&nbsp;codes).<br>
+:return:&nbsp;Updated&nbsp;string&nbsp;with&nbsp;the&nbsp;constructed&nbsp;tree&nbsp;structure.</tt></dd></dl>
+</td></tr></table>
+</body></html>

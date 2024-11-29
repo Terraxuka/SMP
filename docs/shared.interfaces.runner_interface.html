@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module shared.interfaces.runner_interface</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong><a href="shared.html"><font color="#ffffff">shared</font></a>.<a href="shared.interfaces.html"><font color="#ffffff">interfaces</font></a>.runner_interface</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:d%3A%5Cuniversity%5Cpythonlearning%5Csrc%5Cshared%5Cinterfaces%5Crunner_interface.py">d:\university\pythonlearning\src\shared\interfaces\runner_interface.py</a></font></td></tr></table>
+    <p><tt>This&nbsp;module&nbsp;defines&nbsp;an&nbsp;interface&nbsp;for&nbsp;creating&nbsp;runner&nbsp;classes&nbsp;that&nbsp;execute&nbsp;tasks&nbsp;and<br>
+&nbsp;measure&nbsp;execution&nbsp;time.</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="shared.interfaces.runner_interface.html#RunnerInterface">RunnerInterface</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="RunnerInterface">class <strong>RunnerInterface</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>An&nbsp;interface&nbsp;for&nbsp;creating&nbsp;runners.<br>
+&nbsp;<br>
+This&nbsp;interface&nbsp;should&nbsp;be&nbsp;inherited&nbsp;by&nbsp;any&nbsp;class&nbsp;that&nbsp;aims&nbsp;to&nbsp;implement<br>
+a&nbsp;runner.&nbsp;The&nbsp;inheriting&nbsp;class&nbsp;must&nbsp;provide&nbsp;an&nbsp;implementation&nbsp;for&nbsp;the<br>
+`run`&nbsp;method.<br>
+&nbsp;<br>
+Methods<br>
+-------<br>
+<a href="#RunnerInterface-run">run</a>():<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Executes&nbsp;the&nbsp;runner.&nbsp;Must&nbsp;be&nbsp;implemented&nbsp;by&nbsp;any&nbsp;subclass.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Class methods defined here:<br>
+<dl><dt><a name="RunnerInterface-run_with_statistic"><strong>run_with_statistic</strong></a>()<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Executes&nbsp;the&nbsp;runner&nbsp;and&nbsp;measures&nbsp;the&nbsp;time&nbsp;taken&nbsp;to&nbsp;complete&nbsp;the&nbsp;execution.<br>
+&nbsp;<br>
+Returns<br>
+-------<br>
+float<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;time&nbsp;taken&nbsp;to&nbsp;execute&nbsp;the&nbsp;`run`&nbsp;method.</tt></dd></dl>
+
+<hr>
+Static methods defined here:<br>
+<dl><dt><a name="RunnerInterface-run"><strong>run</strong></a>()</dt><dd><tt>Executes&nbsp;the&nbsp;runner.<br>
+&nbsp;<br>
+This&nbsp;method&nbsp;should&nbsp;be&nbsp;implemented&nbsp;by&nbsp;subclasses&nbsp;to&nbsp;define<br>
+the&nbsp;specific&nbsp;runner&nbsp;logic.</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-perf_counter"><strong>perf_counter</strong></a>(...)</dt><dd><tt><a href="#-perf_counter">perf_counter</a>()&nbsp;-&gt;&nbsp;float<br>
+&nbsp;<br>
+Performance&nbsp;counter&nbsp;for&nbsp;benchmarking.</tt></dd></dl>
+</td></tr></table>
+</body></html>

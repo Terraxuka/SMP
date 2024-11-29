@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module shared.classes.folder_data_access</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong><a href="shared.html"><font color="#ffffff">shared</font></a>.<a href="shared.classes.html"><font color="#ffffff">classes</font></a>.folder_data_access</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:d%3A%5Cuniversity%5Cpythonlearning%5Csrc%5Cshared%5Cclasses%5Cfolder_data_access.py">d:\university\pythonlearning\src\shared\classes\folder_data_access.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="logging.html">logging</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="shared.classes.key_data_access.html#KeyDataAccess">shared.classes.key_data_access.KeyDataAccess</a>(<a href="typing.html#Generic">typing.Generic</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="shared.classes.folder_data_access.html#FolderDataAccess">FolderDataAccess</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="FolderDataAccess">class <strong>FolderDataAccess</strong></a>(<a href="shared.classes.key_data_access.html#KeyDataAccess">shared.classes.key_data_access.KeyDataAccess</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#FolderDataAccess">FolderDataAccess</a>(folder_path='assets/',&nbsp;is_without_extension=False,&nbsp;extensions='.txt')<br>
+&nbsp;<br>
+Initializes&nbsp;the&nbsp;<a href="#FolderDataAccess">FolderDataAccess</a>&nbsp;object&nbsp;with&nbsp;specified&nbsp;folder&nbsp;path,<br>
+whether&nbsp;files&nbsp;should&nbsp;be&nbsp;saved&nbsp;without&nbsp;an&nbsp;extension,&nbsp;and&nbsp;the&nbsp;default<br>
+extension&nbsp;for&nbsp;files.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;folder_path&nbsp;(str):&nbsp;The&nbsp;path&nbsp;to&nbsp;the&nbsp;folder&nbsp;where&nbsp;files&nbsp;reside.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;is_without_extension&nbsp;(bool):&nbsp;Whether&nbsp;to&nbsp;save&nbsp;files&nbsp;without&nbsp;extensions.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;extensions&nbsp;(str):&nbsp;Default&nbsp;extension&nbsp;for&nbsp;files&nbsp;if&nbsp;not&nbsp;saving&nbsp;without&nbsp;extension.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="shared.classes.folder_data_access.html#FolderDataAccess">FolderDataAccess</a></dd>
+<dd><a href="shared.classes.key_data_access.html#KeyDataAccess">shared.classes.key_data_access.KeyDataAccess</a></dd>
+<dd><a href="typing.html#Generic">typing.Generic</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="FolderDataAccess-__init__"><strong>__init__</strong></a>(self, folder_path='assets/', is_without_extension=False, extensions='.txt')</dt><dd><tt>Initializes&nbsp;an&nbsp;empty&nbsp;dictionary&nbsp;to&nbsp;store&nbsp;key-value&nbsp;pairs.</tt></dd></dl>
+
+<dl><dt><a name="FolderDataAccess-full_path"><strong>full_path</strong></a>(self, file_name)</dt></dl>
+
+<dl><dt><a name="FolderDataAccess-get"><strong>get</strong></a>(self, key)</dt><dd><tt>Retrieves&nbsp;the&nbsp;value&nbsp;associated&nbsp;with&nbsp;the&nbsp;given&nbsp;key&nbsp;from&nbsp;the&nbsp;dictionary.<br>
+&nbsp;<br>
+:param&nbsp;key:&nbsp;The&nbsp;key&nbsp;for&nbsp;the&nbsp;data&nbsp;to&nbsp;be&nbsp;retrieved.<br>
+:return:&nbsp;The&nbsp;data&nbsp;associated&nbsp;with&nbsp;the&nbsp;given&nbsp;key.</tt></dd></dl>
+
+<dl><dt><a name="FolderDataAccess-set"><strong>set</strong></a>(self, key, data)</dt><dd><tt>Stores&nbsp;a&nbsp;value&nbsp;with&nbsp;the&nbsp;given&nbsp;key&nbsp;in&nbsp;the&nbsp;dictionary.<br>
+&nbsp;<br>
+:param&nbsp;key:&nbsp;The&nbsp;key&nbsp;for&nbsp;the&nbsp;data&nbsp;to&nbsp;be&nbsp;stored.<br>
+:param&nbsp;data:&nbsp;The&nbsp;data&nbsp;to&nbsp;be&nbsp;stored.</tt></dd></dl>
+
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>__parameters__</strong> = ()</dl>
+
+<hr>
+Data descriptors inherited from <a href="shared.classes.key_data_access.html#KeyDataAccess">shared.classes.key_data_access.KeyDataAccess</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Data and other attributes inherited from <a href="shared.classes.key_data_access.html#KeyDataAccess">shared.classes.key_data_access.KeyDataAccess</a>:<br>
+<dl><dt><strong>__orig_bases__</strong> = (typing.Generic[~T],)</dl>
+
+<hr>
+Class methods inherited from <a href="typing.html#Generic">typing.Generic</a>:<br>
+<dl><dt><a name="FolderDataAccess-__class_getitem__"><strong>__class_getitem__</strong></a>(params)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt></dl>
+
+<dl><dt><a name="FolderDataAccess-__init_subclass__"><strong>__init_subclass__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>This&nbsp;method&nbsp;is&nbsp;called&nbsp;when&nbsp;a&nbsp;class&nbsp;is&nbsp;subclassed.<br>
+&nbsp;<br>
+The&nbsp;default&nbsp;implementation&nbsp;does&nbsp;nothing.&nbsp;It&nbsp;may&nbsp;be<br>
+overridden&nbsp;to&nbsp;extend&nbsp;subclasses.</tt></dd></dl>
+
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>DEFAULT_MODE</strong> = 'w'<br>
+<strong>logger</strong> = &lt;Logger shared.services.file_operations (WARNING)&gt;</td></tr></table>
+</body></html>

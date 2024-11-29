@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module shared.interfaces.paint_text_interface</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong><a href="shared.html"><font color="#ffffff">shared</font></a>.<a href="shared.interfaces.html"><font color="#ffffff">interfaces</font></a>.paint_text_interface</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:d%3A%5Cuniversity%5Cpythonlearning%5Csrc%5Cshared%5Cinterfaces%5Cpaint_text_interface.py">d:\university\pythonlearning\src\shared\interfaces\paint_text_interface.py</a></font></td></tr></table>
+    <p><tt>Module&nbsp;containing&nbsp;the&nbsp;<a href="#PaintTextInterface">PaintTextInterface</a>&nbsp;for&nbsp;painting&nbsp;text&nbsp;with&nbsp;color.</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="abc.html#ABC">abc.ABC</a>(<a href="builtins.html#object">builtins.object</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="shared.interfaces.paint_text_interface.html#PaintTextInterface">PaintTextInterface</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="PaintTextInterface">class <strong>PaintTextInterface</strong></a>(<a href="abc.html#ABC">abc.ABC</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Interface&nbsp;for&nbsp;painting&nbsp;text&nbsp;with&nbsp;color.<br>
+&nbsp;<br>
+This&nbsp;abstract&nbsp;base&nbsp;class&nbsp;defines&nbsp;the&nbsp;methods&nbsp;that&nbsp;any&nbsp;concrete&nbsp;class&nbsp;<br>
+must&nbsp;implement&nbsp;to&nbsp;provide&nbsp;painting&nbsp;functionality&nbsp;for&nbsp;text.<br>
+&nbsp;<br>
+Methods:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#PaintTextInterface-paint">paint</a>(text,&nbsp;color):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Paint&nbsp;the&nbsp;given&nbsp;text&nbsp;with&nbsp;the&nbsp;specified&nbsp;color.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#PaintTextInterface-get_colors">get_colors</a>():<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Retrieve&nbsp;the&nbsp;list&nbsp;of&nbsp;available&nbsp;colors.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="shared.interfaces.paint_text_interface.html#PaintTextInterface">PaintTextInterface</a></dd>
+<dd><a href="abc.html#ABC">abc.ABC</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Static methods defined here:<br>
+<dl><dt><a name="PaintTextInterface-get_colors"><strong>get_colors</strong></a>()</dt><dd><tt>Retrieve&nbsp;the&nbsp;list&nbsp;of&nbsp;available&nbsp;colors.<br>
+&nbsp;<br>
+Returns:<br>
+-&nbsp;list:&nbsp;A&nbsp;list&nbsp;of&nbsp;available&nbsp;color&nbsp;names.</tt></dd></dl>
+
+<dl><dt><a name="PaintTextInterface-paint"><strong>paint</strong></a>(text, color)</dt><dd><tt>Paint&nbsp;the&nbsp;given&nbsp;text&nbsp;with&nbsp;the&nbsp;specified&nbsp;color.<br>
+&nbsp;<br>
+Parameters:<br>
+-&nbsp;text&nbsp;(str):&nbsp;The&nbsp;text&nbsp;to&nbsp;be&nbsp;painted.<br>
+-&nbsp;color&nbsp;(str):&nbsp;The&nbsp;color&nbsp;to&nbsp;paint&nbsp;the&nbsp;text.</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>__abstractmethods__</strong> = frozenset({'get_colors', 'paint'})</dl>
+
+</td></tr></table></td></tr></table>
+</body></html>

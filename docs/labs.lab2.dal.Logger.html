@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module labs.lab2.dal.Logger</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong><a href="labs.html"><font color="#ffffff">labs</font></a>.<a href="labs.lab2.html"><font color="#ffffff">lab2</font></a>.<a href="labs.lab2.dal.html"><font color="#ffffff">dal</font></a>.Logger</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:d%3A%5Cuniversity%5Cpythonlearning%5Csrc%5Clabs%5Clab2%5Cdal%5Clogger.py">d:\university\pythonlearning\src\labs\lab2\dal\logger.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="labs.lab2.dal.Logger.html#Logger">Logger</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Logger">class <strong>Logger</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#Logger">Logger</a>(file_path=None,&nbsp;is_write_to_console=True)<br>
+&nbsp;<br>
+<a href="#Logger">Logger</a>&nbsp;class<br>
+&nbsp;<br>
+Provides&nbsp;logging&nbsp;functionality&nbsp;to&nbsp;either&nbsp;a&nbsp;file,&nbsp;console,&nbsp;or&nbsp;both.<br>
+&nbsp;<br>
+Methods:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Logger-__init__">__init__</a>(file_path=None,&nbsp;is_write_to_console=True)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Initializes&nbsp;<a href="#Logger">Logger</a>.&nbsp;Optionally&nbsp;sets&nbsp;file&nbsp;path&nbsp;and&nbsp;console&nbsp;logging.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Logger-console_only">console_only</a>()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Class&nbsp;method.&nbsp;Initializes&nbsp;<a href="#Logger">Logger</a>&nbsp;to&nbsp;log&nbsp;only&nbsp;to&nbsp;the&nbsp;console.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Logger-file_only">file_only</a>(file_path)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Class&nbsp;method.&nbsp;Initializes&nbsp;<a href="#Logger">Logger</a>&nbsp;to&nbsp;log&nbsp;only&nbsp;to&nbsp;a&nbsp;specified&nbsp;file.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Logger-console_and_file">console_and_file</a>(file_path)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Class&nbsp;method.&nbsp;Initializes&nbsp;<a href="#Logger">Logger</a>&nbsp;to&nbsp;log&nbsp;to&nbsp;both&nbsp;console&nbsp;and&nbsp;file.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Logger-log_error">log_error</a>(message,&nbsp;error_level="ERROR")<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Logs&nbsp;an&nbsp;error&nbsp;message&nbsp;with&nbsp;specified&nbsp;error&nbsp;level.&nbsp;Logs&nbsp;to&nbsp;console&nbsp;and/or&nbsp;file&nbsp;based&nbsp;on&nbsp;<a href="#Logger">Logger</a>&nbsp;settings.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;_ensure_file_exists(file_path)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ensures&nbsp;the&nbsp;specified&nbsp;file&nbsp;exists,&nbsp;creating&nbsp;it&nbsp;if&nbsp;necessary.&nbsp;Handles&nbsp;potential&nbsp;file&nbsp;creation&nbsp;errors.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;_write_to_file(message)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Writes&nbsp;a&nbsp;message&nbsp;to&nbsp;the&nbsp;configured&nbsp;log&nbsp;file.&nbsp;Handles&nbsp;potential&nbsp;file&nbsp;writing&nbsp;errors.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Logger-__init__"><strong>__init__</strong></a>(self, file_path=None, is_write_to_console=True)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="Logger-log_error"><strong>log_error</strong></a>(self, message, error_level='ERROR')</dt></dl>
+
+<hr>
+Class methods defined here:<br>
+<dl><dt><a name="Logger-console_and_file"><strong>console_and_file</strong></a>(file_path)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt></dl>
+
+<dl><dt><a name="Logger-console_only"><strong>console_only</strong></a>()<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt></dl>
+
+<dl><dt><a name="Logger-file_only"><strong>file_only</strong></a>(file_path)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table>
+</body></html>

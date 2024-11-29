@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module shared.classes.file_data_access</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong><a href="shared.html"><font color="#ffffff">shared</font></a>.<a href="shared.classes.html"><font color="#ffffff">classes</font></a>.file_data_access</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:d%3A%5Cuniversity%5Cpythonlearning%5Csrc%5Cshared%5Cclasses%5Cfile_data_access.py">d:\university\pythonlearning\src\shared\classes\file_data_access.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="shared.classes.data_access.html#DataAccess">shared.classes.data_access.DataAccess</a>(<a href="builtins.html#object">builtins.object</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="shared.classes.file_data_access.html#FileDataAccess">FileDataAccess</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="FileDataAccess">class <strong>FileDataAccess</strong></a>(<a href="shared.classes.data_access.html#DataAccess">shared.classes.data_access.DataAccess</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#FileDataAccess">FileDataAccess</a>(file_path='assets/2d&nbsp;ascii&nbsp;texts/default.txt',&nbsp;is_caching=False)<br>
+&nbsp;<br>
+<a href="#FileDataAccess">FileDataAccess</a>&nbsp;class&nbsp;provides&nbsp;file-based&nbsp;data&nbsp;access&nbsp;with&nbsp;optional&nbsp;caching.<br>
+Inherits&nbsp;from&nbsp;<a href="shared.classes.data_access.html#DataAccess">DataAccess</a>.<br>
+&nbsp;<br>
+Constructor:<br>
+:param&nbsp;file_path:&nbsp;The&nbsp;path&nbsp;to&nbsp;the&nbsp;file.&nbsp;Default&nbsp;is&nbsp;"assets/2d&nbsp;ascii&nbsp;texts/default.txt".<br>
+:param&nbsp;is_caching:&nbsp;Flag&nbsp;to&nbsp;enable/disable&nbsp;caching.&nbsp;Default&nbsp;is&nbsp;False.<br>
+:raises:&nbsp;Exception&nbsp;if&nbsp;the&nbsp;file&nbsp;does&nbsp;not&nbsp;exist.<br>
+&nbsp;<br>
+set_file_path:<br>
+Sets&nbsp;the&nbsp;file&nbsp;path&nbsp;for&nbsp;file&nbsp;operations.<br>
+:param&nbsp;file_path:&nbsp;The&nbsp;new&nbsp;path&nbsp;to&nbsp;the&nbsp;file.<br>
+&nbsp;<br>
+set:<br>
+Writes&nbsp;data&nbsp;to&nbsp;the&nbsp;file&nbsp;and&nbsp;optionally&nbsp;caches&nbsp;it.<br>
+:param&nbsp;data:&nbsp;The&nbsp;data&nbsp;to&nbsp;write.<br>
+:raises:&nbsp;Exception&nbsp;if&nbsp;writing&nbsp;to&nbsp;the&nbsp;file&nbsp;fails.<br>
+&nbsp;<br>
+get:<br>
+Reads&nbsp;data&nbsp;from&nbsp;the&nbsp;file,&nbsp;using&nbsp;cached&nbsp;data&nbsp;if&nbsp;caching&nbsp;is&nbsp;enabled.<br>
+:returns:&nbsp;Data&nbsp;read&nbsp;from&nbsp;the&nbsp;file.<br>
+:raises:&nbsp;Exception&nbsp;if&nbsp;reading&nbsp;from&nbsp;the&nbsp;file&nbsp;fails.<br>
+&nbsp;<br>
+set_is_caching:<br>
+Enables&nbsp;or&nbsp;disables&nbsp;caching,&nbsp;and&nbsp;updates&nbsp;the&nbsp;cache&nbsp;if&nbsp;enabling.<br>
+:param&nbsp;is_caching:&nbsp;The&nbsp;new&nbsp;caching&nbsp;state.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="shared.classes.file_data_access.html#FileDataAccess">FileDataAccess</a></dd>
+<dd><a href="shared.classes.data_access.html#DataAccess">shared.classes.data_access.DataAccess</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="FileDataAccess-__init__"><strong>__init__</strong></a>(self, file_path='assets/2d ascii texts/default.txt', is_caching=False)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="FileDataAccess-get"><strong>get</strong></a>(self) -&gt; ~T</dt></dl>
+
+<dl><dt><a name="FileDataAccess-set"><strong>set</strong></a>(self, data: ~T)</dt></dl>
+
+<dl><dt><a name="FileDataAccess-set_file_path"><strong>set_file_path</strong></a>(self, file_path)</dt></dl>
+
+<dl><dt><a name="FileDataAccess-set_is_caching"><strong>set_is_caching</strong></a>(self, is_caching)</dt></dl>
+
+<hr>
+Data descriptors inherited from <a href="shared.classes.data_access.html#DataAccess">shared.classes.data_access.DataAccess</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>T</strong> = ~T</td></tr></table>
+</body></html>

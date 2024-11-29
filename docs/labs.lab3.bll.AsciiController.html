@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module labs.lab3.bll.AsciiController</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong><a href="labs.html"><font color="#ffffff">labs</font></a>.<a href="labs.lab3.html"><font color="#ffffff">lab3</font></a>.<a href="labs.lab3.bll.html"><font color="#ffffff">bll</font></a>.AsciiController</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:d%3A%5Cuniversity%5Cpythonlearning%5Csrc%5Clabs%5Clab3%5Cbll%5Casciicontroller.py">d:\university\pythonlearning\src\labs\lab3\bll\asciicontroller.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="labs.lab3.bll.AsciiController.html#AsciiController">AsciiController</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="AsciiController">class <strong>AsciiController</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#AsciiController">AsciiController</a>(generator:&nbsp;shared.classes.ascii_generator.AsciiGenerator,&nbsp;coloring:&nbsp;shared.interfaces.paint_text_interface.PaintTextInterface,&nbsp;arts_access:&nbsp;shared.classes.key_data_access.KeyDataAccess,&nbsp;settings_access:&nbsp;shared.classes.key_data_access.KeyDataAccess)<br>
+&nbsp;<br>
+<a href="#AsciiController">AsciiController</a>&nbsp;is&nbsp;responsible&nbsp;for&nbsp;managing&nbsp;ASCII&nbsp;art&nbsp;generation&nbsp;settings&nbsp;and&nbsp;processes.<br>
+It&nbsp;interacts&nbsp;with&nbsp;the&nbsp;ASCII&nbsp;art&nbsp;generator,&nbsp;coloring&nbsp;interface,&nbsp;and&nbsp;settings&nbsp;storage.<br>
+&nbsp;<br>
+:param&nbsp;generator:&nbsp;Object&nbsp;responsible&nbsp;for&nbsp;generating&nbsp;ASCII&nbsp;art.<br>
+:type&nbsp;generator:&nbsp;AsciiGenerator<br>
+:param&nbsp;coloring:&nbsp;Interface&nbsp;for&nbsp;coloring&nbsp;ASCII&nbsp;art&nbsp;text.<br>
+:type&nbsp;coloring:&nbsp;PaintTextInterface<br>
+:param&nbsp;arts_access:&nbsp;Access&nbsp;interface&nbsp;for&nbsp;art&nbsp;storage.<br>
+:type&nbsp;arts_access:&nbsp;KeyDataAccess<br>
+:param&nbsp;settings_access:&nbsp;Access&nbsp;interface&nbsp;for&nbsp;settings&nbsp;storage.<br>
+:type&nbsp;settings_access:&nbsp;KeyDataAccess<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="AsciiController-__init__"><strong>__init__</strong></a>(self, generator: shared.classes.ascii_generator.AsciiGenerator, coloring: shared.interfaces.paint_text_interface.PaintTextInterface, arts_access: shared.classes.key_data_access.KeyDataAccess, settings_access: shared.classes.key_data_access.KeyDataAccess)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="AsciiController-create_art"><strong>create_art</strong></a>(self, text)</dt></dl>
+
+<dl><dt><a name="AsciiController-create_cut_art"><strong>create_cut_art</strong></a>(self, text)</dt></dl>
+
+<dl><dt><a name="AsciiController-cut"><strong>cut</strong></a>(self, text, width, height)</dt></dl>
+
+<dl><dt><a name="AsciiController-generate"><strong>generate</strong></a>(self, text, width=None)</dt></dl>
+
+<dl><dt><a name="AsciiController-get_alignment"><strong>get_alignment</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="AsciiController-get_art"><strong>get_art</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="AsciiController-get_bright_symbol"><strong>get_bright_symbol</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="AsciiController-get_char_limit"><strong>get_char_limit</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="AsciiController-get_color"><strong>get_color</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="AsciiController-get_colors"><strong>get_colors</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="AsciiController-get_empty_symbol"><strong>get_empty_symbol</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="AsciiController-get_font"><strong>get_font</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="AsciiController-get_fonts"><strong>get_fonts</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="AsciiController-get_height"><strong>get_height</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="AsciiController-get_is_line_breaks"><strong>get_is_line_breaks</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="AsciiController-get_is_symbols_replace"><strong>get_is_symbols_replace</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="AsciiController-get_max_possible_height"><strong>get_max_possible_height</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="AsciiController-get_max_possible_width"><strong>get_max_possible_width</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="AsciiController-get_min_height"><strong>get_min_height</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="AsciiController-get_min_width"><strong>get_min_width</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="AsciiController-get_settings_info"><strong>get_settings_info</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="AsciiController-get_width"><strong>get_width</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="AsciiController-is_art_allowed"><strong>is_art_allowed</strong></a>(self, art: str)</dt></dl>
+
+<dl><dt><a name="AsciiController-is_art_exist"><strong>is_art_exist</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="AsciiController-is_font_correct"><strong>is_font_correct</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="AsciiController-is_font_support_line_break"><strong>is_font_support_line_break</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="AsciiController-is_line_broken"><strong>is_line_broken</strong></a>(self, art: str)</dt></dl>
+
+<dl><dt><a name="AsciiController-justify"><strong>justify</strong></a>(self, text)</dt></dl>
+
+<dl><dt><a name="AsciiController-paint"><strong>paint</strong></a>(self, art)</dt></dl>
+
+<dl><dt><a name="AsciiController-remove_color"><strong>remove_color</strong></a>(string)</dt></dl>
+
+<dl><dt><a name="AsciiController-replace"><strong>replace</strong></a>(self, art)</dt></dl>
+
+<dl><dt><a name="AsciiController-save_art"><strong>save_art</strong></a>(self, name)</dt></dl>
+
+<dl><dt><a name="AsciiController-set_alignment"><strong>set_alignment</strong></a>(self, alignment)</dt></dl>
+
+<dl><dt><a name="AsciiController-set_art"><strong>set_art</strong></a>(self, art)</dt></dl>
+
+<dl><dt><a name="AsciiController-set_bright_symbol"><strong>set_bright_symbol</strong></a>(self, bright_symbol)</dt></dl>
+
+<dl><dt><a name="AsciiController-set_color"><strong>set_color</strong></a>(self, color)</dt></dl>
+
+<dl><dt><a name="AsciiController-set_empty_symbol"><strong>set_empty_symbol</strong></a>(self, empty_symbol)</dt></dl>
+
+<dl><dt><a name="AsciiController-set_font"><strong>set_font</strong></a>(self, font)</dt></dl>
+
+<dl><dt><a name="AsciiController-set_height"><strong>set_height</strong></a>(self, height)</dt></dl>
+
+<dl><dt><a name="AsciiController-set_is_line_breaks"><strong>set_is_line_breaks</strong></a>(self, is_line_breaks)</dt></dl>
+
+<dl><dt><a name="AsciiController-set_is_symbols_replace"><strong>set_is_symbols_replace</strong></a>(self, is_symbols_replace)</dt></dl>
+
+<dl><dt><a name="AsciiController-set_width"><strong>set_width</strong></a>(self, width)</dt></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table>
+</body></html>
